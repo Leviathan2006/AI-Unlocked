@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import DiscoverTrips from "../components/DiscoverTrips";
 import TrustedBy from "../components/TrustedBy";
 import "./main.css";
-
+import { useNavigate } from "react-router-dom";
 export default function MainPage() {
 
   const phrases = [

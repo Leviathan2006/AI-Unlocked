@@ -1,6 +1,12 @@
 import { ArrowUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Hero({ displayText }) {
+    const handleSubmit = () => {
+        navigate("/response");
+      };
+    const navigate = useNavigate();
   return (
     <section
       className="min-h-screen w-full flex items-center justify-center 
@@ -30,7 +36,7 @@ export default function Hero({ displayText }) {
                          outline-none text-lg"
             />
 
-            <button className="bg-white text-black p-3 rounded-full 
+            <button onClick={handleSubmit} lassName="bg-white text-black p-3 rounded-full 
                                hover:scale-105 transition">
               <ArrowUp size={18} />
             </button>
