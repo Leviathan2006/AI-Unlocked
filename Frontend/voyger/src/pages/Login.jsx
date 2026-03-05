@@ -2,7 +2,7 @@ import AuthLayout from "../components/AuthLayout";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const API = "http://localhost:3001";
+const API = "https://ai-unlocked-backend.onrender.com";
 
 export default function Login() {
 
